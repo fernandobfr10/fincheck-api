@@ -1,0 +1,10 @@
+name: fincheck-api
+services:
+  pg:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: fincheck
